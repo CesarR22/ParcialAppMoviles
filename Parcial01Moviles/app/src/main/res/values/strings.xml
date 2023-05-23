@@ -2,10 +2,10 @@
     <string name="app_name">Parcial01Moviles</string>
     <string name="hello_fragment">Hello fragment</string>
     <string name="name_hint_input_text">Name</string>
-    <string name="capital_hint_input_text">capital</string>
-    <string name="add_provincia_button_text">Add provincia</string>
-    <string name="add_provincia_title_text_view">Add a provincia</string>
-    <string name="provincia_information_title_text_view">provincia information</string>
+    <string name="capital_hint_input_text">Capital</string>
+    <string name="add_provincia_button_text">Agregar</string>
+    <string name="add_provincia_title_text_view">Agregar provincia</string>
+    <string name="provincia_information_title_text_view">Provincia informacion</string>
     <string name="floating_button_description">floating_button</string>
     <string name="list_of_provincias_text_view">List of provincia</string>
 

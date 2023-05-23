@@ -17,7 +17,7 @@
         android:layout_marginBottom="@dimen/small_gap">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/museum_item_card_view"
+            android:id="@+id/provincia_item_card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/background_card"
@@ -40,7 +40,7 @@
                 </TextView>
 
                 <TextView
-                    android:id="@+id/ubication_text_view"
+                    android:id="@+id/capital_text_view"
                     android:layout_width="match_parent"
                     android:textColor="@color/white"
                     android:layout_height="wrap_content">

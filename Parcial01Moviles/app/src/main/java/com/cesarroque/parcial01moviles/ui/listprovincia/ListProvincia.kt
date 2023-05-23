@@ -39,28 +39,28 @@ class ListProvincia : Fragment() {
 
         binding.floatingActionButton.setOnClickListener {
             provinciaViewModel.clearData()
-            it.findNavController().navigate(R.id.action_listMuseum_to_addMuseum)
+            it.findNavController().navigate(R.id.action_listProvincia_to_addProvincia)
         }
     }
 
     private fun showSelectedItem(provincia: ProvinciaModel) {
         provinciaViewModel.setSelectedProvincia(provincia)
-        findNavController().navigate(R.id.action_listMuseum_to_infoMuseum)
+        findNavController().navigate(R.id.action_listProvincia_to_infoProvincia)
     }
 
-    private fun displayMuseums() {
+    private fun displayProvincias() {
         adapter.setData(provinciaViewModel.getProvincias())
         adapter.notifyDataSetChanged()
     }
 
     private fun setRecyclerView(view: View) {
-        binding.reciclerViewMuseums.layoutManager = LinearLayoutManager(view.context)
+        binding.reciclerViewProvincia.layoutManager = LinearLayoutManager(view.context)
 
-        adapter = ProvinciaRecyclerViewAdapter { selectedMuseum ->
-            showSelectedItem(selectedMuseum)
+        adapter = ProvinciaRecyclerViewAdapter { selectedProvincia ->
+            showSelectedItem(selectedProvincia)
         }
 
-        binding.reciclerViewMuseums.adapter = adapter
-        displayMuseums()
+        binding.reciclerViewProvincia.adapter = adapter
+        displayProvincias()
     }
 }

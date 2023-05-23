@@ -11,7 +11,7 @@ class ProvinciaRecyclerViewAdapter(
     private val clickListener: (ProvinciaModel) -> Unit
 ) : RecyclerView.Adapter<ProvinciaRecyclerViewHolder>() {
 
-    private val museums = ArrayList<ProvinciaModel>()
+    private val provincias = ArrayList<ProvinciaModel>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProvinciaRecyclerViewHolder {
         val binding = ProvinciasItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -19,17 +19,17 @@ class ProvinciaRecyclerViewAdapter(
     }
 
     override fun getItemCount(): Int {
-        return museums.size
+        return provincias.size
     }
 
     override fun onBindViewHolder(holder: ProvinciaRecyclerViewHolder, position: Int) {
-        val museum = museums[position]
-        holder.bind(museum, clickListener)
+        val provincia = provincias[position]
+        holder.bind(provincia, clickListener)
     }
 
-    fun setData(museumList: List<ProvinciaModel>) {
-        museums.clear()
-        museums.addAll(museumList)
+    fun setData(provinciaList: List<ProvinciaModel>) {
+        provincias.clear()
+        provincias.addAll(provinciaList)
     }
 
 }

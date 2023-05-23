@@ -61,10 +61,9 @@ class ProvinciaViewModel(private val repository: ProvinciaRepository): ViewModel
         val Factory = viewModelFactory {
             initializer {
                 val app = this[APPLICATION_KEY] as ProvinciaReviewerApplication
-                ProvinciaViewModel(app.museumRepository)
+                ProvinciaViewModel(app.provinciaRepository)
             }
         }
-
         const val PROVINCIA_CREATED = "PROVINCIA_CREATED"
         const val SOMETHING_WRONG = "SOMETHING_WRONG"
         const val INACTIVE = ""

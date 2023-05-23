@@ -6,7 +6,7 @@ import com.cesarroque.parcial01moviles.repositories.ProvinciaRepository
 
 
 class ProvinciaReviewerApplication: Application() {
-    val museumRepository: ProvinciaRepository by lazy {
+    val provinciaRepository: ProvinciaRepository by lazy {
         ProvinciaRepository(provincias)
     }
 }

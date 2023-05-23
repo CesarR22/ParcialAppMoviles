@@ -2,25 +2,25 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/listMuseum">
+    app:startDestination="@id/listProvincia">
 
     <fragment
-        android:id="@+id/listMuseum"
+        android:id="@+id/listProvincia"
         android:name="com.cesarroque.parcial01moviles.ui.listprovincia.ListProvincia"
-        android:label="ListMuseum" >
+        android:label="ListProvincia" >
         <action
-            android:id="@+id/action_listMuseum_to_addMuseum"
-            app:destination="@id/addMuseum" />
+            android:id="@+id/action_listProvincia_to_addProvincia"
+            app:destination="@id/addProvincia" />
         <action
-            android:id="@+id/action_listMuseum_to_infoMuseum"
-            app:destination="@id/infoMuseum" />
+            android:id="@+id/action_listProvincia_to_infoProvincia"
+            app:destination="@id/infoProvincia" />
     </fragment>
     <fragment
-        android:id="@+id/addMuseum"
+        android:id="@+id/addProvincia"
         android:name="com.cesarroque.parcial01moviles.ui.addProvincia.AddProvincia"
-        android:label="AddMuseum" />
+        android:label="AddProvincia" />
     <fragment
-        android:id="@+id/infoMuseum"
+        android:id="@+id/infoProvincia"
         android:name="com.cesarroque.parcial01moviles.ui.informationprovincia.InfoProvincia"
-        android:label="InfoMuseum" />
+        android:label="InfoProvincia" />
 </navigation>
