@@ -1,6 +1,9 @@
 version: 2
 updates:
-  - package-ecosystem: "gradle" # Indica que estás trabajando con el ecosistema de Android
-    directory: "/" # Ubicación de los archivos de configuración de Gradle en tu proyecto
+  - package-ecosystem: "gradle"
+    directory: "/"
     schedule:
       interval: "daily"
+      time: "10:00:00" # Puedes ajustar el horario según tus preferencias
+    open-pull-requests-limit: 10
+    # Aquí puedes agregar más opciones de configuración según tus necesidades
