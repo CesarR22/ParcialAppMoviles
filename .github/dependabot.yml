@@ -1,6 +1,6 @@
 version: 2
 updates:
   - package-ecosystem: "gradle" # Indica que estás trabajando con el ecosistema de Android
-    directory: "/build.gradle" # Ubicación de los archivos de configuración de Gradle en tu proyecto
+    directory: "/" # Ubicación de los archivos de configuración de Gradle en tu proyecto
     schedule:
       interval: "daily"
