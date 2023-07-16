@@ -4,6 +4,3 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-      time: "10:00:00" # Puedes ajustar el horario según tus preferencias
-    open-pull-requests-limit: 10
-    # Aquí puedes agregar más opciones de configuración según tus necesidades
